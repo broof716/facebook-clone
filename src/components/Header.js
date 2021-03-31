@@ -1,4 +1,5 @@
-import { Flag, Home, Search, StorefrontOutlined, Subscriptions, SupervisedUserCircle } from '@material-ui/icons';
+import { Avatar, IconButton } from '@material-ui/core';
+import { Add, ExpandMore, Flag, Forum, Home, NotificationsActive, Search, StorefrontOutlined, Subscriptions, SupervisedUserCircle } from '@material-ui/icons';
 import React from 'react'
 import '../styles/Header.css'
 
@@ -12,7 +13,7 @@ function Header() {
         <Search />
         <input type="text" />
       </div>
-      <div className="header__middle">
+      <div className="header__center">
         <div className="header__option">
           <Home fontSize="large" />
         </div>
@@ -31,7 +32,23 @@ function Header() {
 
       </div>
       <div className="header__right">
+        <div className="header__info">
+          <Avatar />
+          <h4>Bryan Roof</h4>
+        </div>
 
+        <IconButton>
+          <Add />
+        </IconButton>
+        <IconButton>
+          <Forum />
+        </IconButton>
+        <IconButton>
+          <NotificationsActive />
+        </IconButton>
+        <IconButton>
+          <ExpandMore />
+        </IconButton>
       </div>
       
       
