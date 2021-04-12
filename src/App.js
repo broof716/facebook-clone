@@ -7,7 +7,7 @@ import Sidebar from './components/Sidebar';
 import Widgets from './components/Widgets';
 
 function App() {
-  const user = "bryan";
+  const user = null;
   return (
     // BEM naming convention
     <div className="app">
